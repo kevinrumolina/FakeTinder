@@ -1,0 +1,250 @@
+html{
+  background-color: black;
+  height: 100%;
+  min-height: 100%;
+}
+
+.app-ui{
+  display: block;
+  width: 360px;
+  height: 640px;
+  background-color: rgb(255, 255, 255);
+  margin: 16px auto 0;
+  position: relative;
+}
+/*estilos del nav*/
+nav{
+  position: relative;
+  height: 48px;
+  width: 100%;
+  border-bottom: 1px solid #F9F9F9;
+}
+
+nav>button{
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  background-color: white;
+  border: 0;
+  padding: 0;
+  top: 0;
+}
+
+button.ui-settings{
+  left: 0;
+  top: 0;
+  right: unset;
+  bottom unset;
+}
+
+button.ui-chat{
+  right: 0;
+  top:0;
+  left: unset;
+  bottom: unset;
+}
+
+button>i.fa{
+  font-size: 36px;
+}
+
+.logo{
+  display: inline-block;
+  max-width: calc(100% - 96px);
+  left: 48px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo>img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+figure{
+  width: 100%;
+  height: 70%;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+/*estilos del slider*/
+ul.slider{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+ul.slider>li{
+  display: inline-block;
+  margin: 10px;
+  width: 340px;
+  height: 480px;
+  position: relative;
+}
+
+figure.profile{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #F2F2F2;
+  box-shadow: 0 0 2px 2px #F2F2F2;
+}
+
+figure.profile>img{
+  display: inline-block;
+  height: calc(100% - 64px);
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+figure.profile>figcaption{
+  height: 64px;
+  margin: 0 10px;
+}
+
+figure.profile>figcaption>h1,
+figure.profile>figcaption>p{
+  text-align: left;
+  padding-left: 1rem;
+}
+
+figure.profile>figcaption>h1{
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+figure.profile>figcaption>p{
+  font-size: 1rem;
+}
+
+figure.profile>figcaption>h1>.age::before{
+  content: ", "
+}
+/*Botones de seleccion*/
+section#main-tab>div{
+display: inline-block;
+width: 100%;
+height: 92px;
+}
+
+section#main-tab>div>button{
+display: inline-block;
+padding: 0;
+border: 8px solid #F2F2F2;
+}
+
+section#main-tab>div>button.ui-small{
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  background-color: white;
+  border-radius: 100%;
+  font-size: 1rem;
+
+}
+
+section#main-tab>div>button.ui-big{
+  display: inline-block;
+  width: 76px;
+  height: 76px;
+  background-color: white;
+  border-radius: 100%;
+  font-size: 2rem;
+}
+
+i.fa-undo{
+  color: gold;
+}
+
+i.fa-times{
+  color: red;
+}
+
+i.fa-heart{
+  color: green;
+}
+
+i.fa-star{
+  color: turquoise;
+}
+
+/*segunda pantalla*/
+section#matches-tab>nav>button.ui-chat{
+  left: 37.5%%;
+  top: 0;
+  right: unset;
+  bottom: unset;
+}
+/*New Matches segunda pantalla*/
+section#matches-tab>h1.matches{
+  margin: 6px 0 0 4px;
+  text-align: left;
+  font-size: 0.7rem;
+}
+
+.matches-msj::before{
+  content: "   ";
+}
+
+ul{
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #F9F9F9
+}
+
+li.match-log{
+  display: inline-block;
+  width: 20%;
+  height: 75%;
+  background-color: white;
+  margin: 10px 2px 2px 2px;
+
+}
+
+figure.matches-img{
+  width: 80%;
+  height: 80%;
+}
+
+figure.matches-img>img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 2px solid grey;
+  border-radius: 100%;
+}
+
+figure.matches-img>figcaption>h1{
+  font-size: 12px;
+}
+/*first no mobile screen < 720px*/
+@media screen and (min-width: 720px){
+  .app-ui{
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  body{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #matches-tab{
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 720px) and (min-height: 640px){
+  body{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
