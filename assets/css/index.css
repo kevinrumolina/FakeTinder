@@ -144,8 +144,6 @@ section#main-tab>div>button.ui-small{
   height: 54px;
   background-color: white;
   border-radius: 100%;
-  font-size: 1rem;
-
 }
 
 section#main-tab>div>button.ui-big{
@@ -154,21 +152,22 @@ section#main-tab>div>button.ui-big{
   height: 76px;
   background-color: white;
   border-radius: 100%;
+}
+button.ui-big>i{
   font-size: 2rem;
 }
-
+button.ui-small>i{
+  font-size:  1.5rem;
+}
 i.fa-undo{
   color: gold;
 }
-
 i.fa-times{
   color: red;
 }
-
 i.fa-heart{
   color: green;
 }
-
 i.fa-star{
   color: turquoise;
 }
