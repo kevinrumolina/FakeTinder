@@ -179,7 +179,48 @@ section#matches-tab>nav>button.ui-chat{
   right: unset;
   bottom: unset;
 }
+/*New Matches segunda pantalla*/
+section#matches-tab>h1.matches{
+  margin: 6px 0 0 4px;
+  text-align: left;
+  font-size: 0.7rem;
+}
 
+.matches-msj::before{
+  content: "   ";
+}
+
+ul{
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #F9F9F9
+}
+
+li.match-log{
+  display: inline-block;
+  width: 20%;
+  height: 75%;
+  background-color: white;
+  margin: 10px 2px 2px 2px;
+
+}
+
+figure.matches-img{
+  width: 80%;
+  height: 80%;
+}
+
+figure.matches-img>img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 2px solid grey;
+  border-radius: 100%;
+}
+
+figure.matches-img>figcaption>h1{
+  font-size: 12px;
+}
 /*first no mobile screen < 720px*/
 @media screen and (min-width: 720px){
   .app-ui{
